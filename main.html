@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <div id="caption">
+            <h2> Find a restaurant! </h2>
+        </div>
+        <h5>
+            This is a program to find restaurants in Google Maps. Enter the name of the restaurant and pick a
+            radius value. The restaurant you search for will be marked with a red marker, surrounded by a red circle
+            with entered radius and a black polygon representing this circle. In the output field, you can find polygon
+            data as GeoJSON.
+        </h5>
+    </head>
+
+    <body onload="initializeMap()">
+        <div id="container">
+            <div id="map"></div>
+            <div id="inputs">
+                <input id="address" placeholder="address" required><br><br>
+                <input id="range" type="range" min="1" max="50" value="1" class="slider"><br><br>
+                <p> Radius: <span id="value"></span></p><br><br><br>
+                <input id ="find" type="button" value="Find" name="Restaurant address" onclick="find()">
+            </div>
+            <div id="output">
+                <pre id="out"></pre>
+            </div>
+        </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6g-BV86vSjalCwoC3iTf5tokfZUumNRk&callback=myMap"></script>
+    <script  type="text/javascript" src="main.js"></script>
+    </body>
+
+</html>

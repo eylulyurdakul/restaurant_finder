@@ -1,0 +1,66 @@
+html {
+    font-family: Georgia;
+    color: #063536;
+}
+
+#caption {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+}
+
+#map {
+    float:left;
+    width: 900px;
+    height: 560px;
+}
+
+#inputs {
+    display: inline-block;
+    text-align:center;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+#address {
+    float: left;
+    border: 2px solid #063536;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#range {
+    float: left;
+}
+
+#find {
+    float: left;
+    border: 2px solid gainsboro;
+    border-radius: 4px;
+    font-family: Georgia;
+    color: #063536;
+}
+
+p {
+    float: left;
+}
+
+#output {
+    border: 2px solid #063536;
+    height: 560px;
+    border-radius: 4px;
+    overflow: auto;
+    width:23%;
+    float: right;
+}
+
+#out {
+    float: left;
+    font-family: Georgia;
+    font-size: 15px;
+    color: #063536;
+}
